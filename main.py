@@ -2,9 +2,12 @@
 
 import argparse
 import os
+import sys
 
-from lib.install import Install
-from lib.wireless import Wifi
+sys.path.append('lib')
+
+from install import Install
+from wireless import Wifi
 
 class Main:
     def __init__(self):
@@ -42,4 +45,4 @@ class Main:
         w = Wifi()
         
 if __name__ == '__main__':
-    main()
+    Main()
